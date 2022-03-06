@@ -4,10 +4,17 @@ import ReactDOM from "react-dom";
 function Greeting() {
   return (
     <div>
-      <h1>Hi, I am Joel and this is my first component</h1>
+      <Person />
+      <Message />
     </div>
   );
 }
+
+function Person() {
+  return <h1>Joel Philip</h1>;
+}
+
+const Message = () => <p>This is an example of nested components</p>;
 
 ReactDOM.render(
   <React.StrictMode>
